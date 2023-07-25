@@ -16,7 +16,7 @@ RUN \
 
 # Install Atomic Red Team and download atomics
 RUN \
-    pwsh -Command "IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' -UseBasicParsing); Install-AtomicRedTeam -getAtomics"
+    pwsh -Command "IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/v2.0.0.0/install-atomicredteam.ps1' -UseBasicParsing); Install-AtomicRedTeam -getAtomics"
 
 # Create a PowerShell profile so the Invoke-AtomicRedTeam
 # module is imported automatically
