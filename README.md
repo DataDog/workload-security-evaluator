@@ -59,7 +59,7 @@ For a full list of Datadog's runtime detections, visit the [Out-of-the-box (OOTB
 
 The MITRE ATT&CK [Linux Matrix](https://attack.mitre.org/matrices/enterprise/linux/) contains techniques for Linux hosts with a variety of purposes. Testing the techniques located in [notrelevant.md](notrelevant.md) is not recommended because they are focused on Linux workstations or are unlikely to be detected using operating system events.
 
-Visualize these techniques by uploading the file [notrelevant_layer.json](notrelevant_layer.json) to [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/).
+[Visualize with ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2FDataDog%2Fworkload-security-evaluator%2Fmain%2Fnotrelevant_layer%2Ejson).
 
 ## Contributing
 
