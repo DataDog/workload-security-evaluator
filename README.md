@@ -1,4 +1,5 @@
-Workload Security Evaluator is an automated platform to simulate runtime attacks and test Datadog's default runtime security detections.
+Workload Security Evaluator is an automated platform to test Datadog's default runtime security detections by simulating runtime attacks using [Atomic Red Team](#atomic-red-team-organization). 
+
 
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
@@ -9,7 +10,7 @@ Workload Security Evaluator is an automated platform to simulate runtime attacks
 
 ## Requirements
 
-Workload Security Evaluator runs on Docker. We recommend launching a compute instance in your preferred cloud provider for the most accurate results. Alternatively, use a virtual machine or Docker Desktop. Apple silicon is not supported.
+Workload Security Evaluator runs on Docker. For the most accurate results, Datadog recommends launching a compute instance in your preferred cloud provider. Alternatively, use a virtual machine or Docker Desktop. Apple silicon is not supported.
 
 ## Getting started
 
@@ -26,7 +27,7 @@ Invoke-AtomicTest T1105-27 -ShowDetails
 Invoke-AtomicTest T1105-27 -GetPrereqs # Download packages or payloads
 Invoke-AtomicTest T1105-27
 ```
-3. Check for a signal in Datadog [Signals Explorer](https://app.datadoghq.com/security?query=env%3Aemulation) page. Signals from Workload Security Evaluator are tagged with `env:emulation` to differentiate them from real security threats.
+3. Check for a signal in the Datadog [Signals Explorer](https://app.datadoghq.com/security?query=env%3Aemulation) page. Signals from Workload Security Evaluator are tagged with `env:emulation` to differentiate them from real security threats.
 4. Revert the changes made by the atomic.
 ```
 Invoke-AtomicTest T1053.003-2 -Cleanup
@@ -39,7 +40,7 @@ docker compose down
 
 ## Atomic Red Team organization
 
-Atomic Red Team often contains multiple tests for the same ATT&CK technique. For example, the test identifier T1136.001-1 refers to the first test for MITRE ATT&CK technique T1136.001 (Create Account: Local Account). This test creates an account on a Linux system. The second test, T1136.001-2, creates an account on a MacOS system.
+[Atomic Red Team](https://atomicredteam.io/) often contains multiple tests for the same ATT&CK technique. For example, the test identifier T1136.001-1 refers to the first test for MITRE ATT&CK technique T1136.001 (Create Account: Local Account). This test creates an account on a Linux system. The second test, T1136.001-2, creates an account on a MacOS system.
 
 ## Recommended tests
 
@@ -57,7 +58,7 @@ For a full list of Datadog's runtime detections, visit the [Out-of-the-box (OOTB
 
 ## Techniques not relevant to production workloads
 
-The MITRE ATT&CK [Linux Matrix](https://attack.mitre.org/matrices/enterprise/linux/) contains techniques for Linux hosts with a variety of purposes. Testing the techniques located in [notrelevant.md](notrelevant.md) is not recommended because they are focused on Linux workstations or are unlikely to be detected using operating system events.
+The MITRE ATT&CK [Linux Matrix](https://attack.mitre.org/matrices/enterprise/linux/) contains techniques for Linux hosts with a variety of purposes. Testing the techniques located in [notrelevant.md](notrelevant.md) is not recommended, because they are focused on Linux workstations or are unlikely to be detected using operating system events.
 
 [Visualize with ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2FDataDog%2Fworkload-security-evaluator%2Fmain%2Fnotrelevant_layer%2Ejson).
 
