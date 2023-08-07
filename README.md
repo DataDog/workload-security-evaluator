@@ -1,10 +1,9 @@
-Workload Security Evaluator is an automated platform to test Datadog's default runtime security detections by simulating runtime attacks using [Atomic Red Team](#atomic-red-team-organization). 
-
+Workload Security Evaluator provides tooling to simulate runtime attacks and test Datadog Cloud Workload Security's default runtime detections. Tests are completed using [Atomic Red Team](https://atomicredteam.io/).
 
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
-- [Atomic Red Team organization](#atomic-red-team-organization)
-- [Recommended tests](#recommended-tests)
+- [Atomic test organization](#atomic-test-organization)
+- [Test against real-world threats](#test-against-real-world-threats)
 - [Techniques not relevant to production workloads](#techniques-not-relevant-to-production-workloads)
 - [Contributing](#contributing)
 
@@ -38,11 +37,11 @@ Invoke-AtomicTest T1053.003-2 -Cleanup
 docker compose down
 ```
 
-## Atomic Red Team organization
+## Atomic test organization
 
 [Atomic Red Team](https://atomicredteam.io/) often contains multiple tests for the same ATT&CK technique. For example, the test identifier T1136.001-1 refers to the first test for MITRE ATT&CK technique T1136.001 (Create Account: Local Account). This test creates an account on a Linux system. The second test, T1136.001-2, creates an account on a MacOS system.
 
-## Recommended tests
+## Test against real-world threats
 
 The following atomics are recommended as a starting point. They emulate techniques that were observed in real attacks targeting cloud workloads.
 
