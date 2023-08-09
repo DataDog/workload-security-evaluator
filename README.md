@@ -5,7 +5,6 @@ Workload Security Evaluator provides tooling to simulate runtime attacks and tes
 - [Atomic test organization](#atomic-test-organization)
 - [Test against real-world threats](#test-against-real-world-threats)
 - [Techniques not relevant to production workloads](#techniques-not-relevant-to-production-workloads)
-- [Contributing](#contributing)
 
 ## Requirements
 
@@ -60,7 +59,3 @@ For a full list of Datadog's runtime detections, visit the [Out-of-the-box (OOTB
 The MITRE ATT&CK [Linux Matrix](https://attack.mitre.org/matrices/enterprise/linux/) contains techniques for Linux hosts with a variety of purposes. Testing the techniques located in [notrelevant.md](notrelevant.md) is not recommended, because they are focused on Linux workstations or are unlikely to be detected using operating system events.
 
 [Visualize with ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2FDataDog%2Fworkload-security-evaluator%2Fmain%2Fnotrelevant_layer%2Ejson).
-
-## Contributing
-
-At this time, the repository is not accepting contributions.
