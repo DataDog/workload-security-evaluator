@@ -1,4 +1,6 @@
-Workload Security Evaluator provides tooling to simulate runtime attacks and test Datadog Cloud Workload Security's default runtime detections. Tests are completed using [Atomic Red Team](https://atomicredteam.io/).
+Workload Security Evaluator provides tooling to simulate runtime attacks and test default runtime detections from Datadog Cloud Security Management. Tests are completed using [Atomic Red Team](https://atomicredteam.io/).
+
+Read the [corresponding blog post](https://datadoghq.com/blog/workload-security-evaluator) for more details.
 
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
