@@ -12,7 +12,7 @@ RUN \
 
 # Install prerequisites
 RUN \
-    apt-get install -y sudo make kmod gcc nmap clang iproute2
+    apt-get install -y sudo make kmod gcc nmap clang iproute2 curl
 
 # Install Atomic Red Team and download atomics
 RUN \
