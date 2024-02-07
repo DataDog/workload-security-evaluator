@@ -54,7 +54,7 @@ The following atomics are recommended as a starting point. They emulate techniqu
 |T1053.003-2|[Cron - Add script to all cron subfolders](https://atomicredteam.io/privilege-escalation/T1053.003/#atomic-test-2---cron---add-script-to-all-cron-subfolders)|[Cron job modified](https://docs.datadoghq.com/security/default_rules/cron_at_job_injection/)|[Source](https://blog.talosintelligence.com/rocke-champion-of-monero-miners/)
 |T1070.003-1|[Clear Bash history (rm)](https://atomicredteam.io/defense-evasion/T1070.003/#atomic-test-1---clear-bash-history-(rm))|[Shell command history modified](https://docs.datadoghq.com/security/default_rules/shell_history_tamper/)|[Source](https://unit42.paloaltonetworks.com/hildegard-malware-teamtnt/)|
 
-For a full list of Datadog's runtime detections, visit the [Out-of-the-box (OOTB) rules](https://docs.datadoghq.com/security/default_rules/#cat-workload-security) page. MITRE ATT&CK tactic and technique information is provided for every rule.
+For a full list of Datadog's runtime detections, visit the [Out-of-the-box (OOTB) rules](https://docs.datadoghq.com/security/default_rules/?category=cat-csm-threats) page. MITRE ATT&CK tactic and technique information is provided for every rule.
 
 ## Techniques not relevant to production workloads
 
